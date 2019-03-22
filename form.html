@@ -7,7 +7,119 @@
     <title>Social nutrition</title>
 </head>
 <body>
-    <h1> Hello World! </h1>
+
+    <form action="https://formspree.io/vrahenchuk@gmail.com" method="post"  target="_blank">
+
+      <header>
+        <h2 style="font-family: 'courier'">Give the answers to simple questions</h2>
+        <div></div>
+      </header>
+  
+        <div style="font-family: 'courier'">
+                <label class="desc" id="title1" for="Name">First Name:</label>
+            <div>
+                <input id="Name" name="Name" type="text" class="field text fn" value="" size="30" tabindex="1" required placeholder="Write here Your First Name">
+            </div>
+        </div>
+  
+        <div style="font-family: 'courier'">
+                <label class="desc" id="title2" for="SecondName">Second Name:</label>
+            <div>
+                <input id="SecondName" name="SecondName" type="text" class="field text fn" value="" size="30" tabindex="1" required placeholder="Write here Your Second Name">
+            </div>
+        </div>
+    
+    <div style="font-family: 'courier'">
+                <label class="desc" id="title3" for="Email">Email:</label>
+            <div>
+                <input id="Email" name="Email" type="email" spellcheck="false" value="" size="30" maxlength="150" tabindex="1" required placeholder="Write Your Mail@"> 
+            </div>
+    </div> <br>
+    
+    <div style="font-family: 'courier'">
+        <label class="desc" id="title4" for="Places"> Write briefly about what places you recently visited (traveling) </label>
+    <div>
+        <textarea id="Places" name="Places" spellcheck="true" rows="5" cols="75" tabindex="1" placeholder="A few sentences about your past travels" autofocus> </textarea>
+    </div>
+    </div> <br>
+    
+    <div style="font-family: 'courier'">
+    <fieldset>
+        <legend id="title5" class="desc"> What kind of transport do you usually travel? </legend>
+    <div>
+      	<input id="radioDefault_5" name="Transport" type="hidden" value="" >
+      	<div>
+      		<input id="Field5_0" name="Transport" type="radio" value="Auto" tabindex="5" checked="checked" >
+      		<label class="choice" for="Field5_0">Auto</label>
+      	</div>
+        <div>
+        	<input id="Field5_1" name="Transport" type="radio" value="Train" tabindex="6">
+        	<label class="choice" for="Field5_1">Train</label>
+        </div>
+        <div>
+        	<input id="Field5_2" name="Transport" type="radio" value="Plane" tabindex="7">
+        	<label class="choice" for="Field5_2">Plane</label>
+        </div>
+        <div>
+        	<input id="Field5_3" name="Transport" type="radio" value="Bike" tabindex="7">
+        	<label class="choice" for="Field5_3">Bike</label>
+        </div>
+        <div>
+        	<input id="Field5_4" name="Transport" type="radio" value="Buses" tabindex="7">
+        	<label class="choice" for="Field5_4">Buses</label>
+        </div>
+      </div>
+    </fieldset>
+    </div> <br>
+  
+  <div style="font-family: 'courier'">
+    <fieldset>
+      <legend id="title6" class="desc">While traveling, you eat in ... </legend>
+      <div>
+      	<input id="Field6" name="EatingPlace" type="checkbox" value="Restaurants" tabindex="8">
+      	<label class="choice" for="Field6">Restaurants</label>
+      </div>
+      <div>
+      	<input id="Field7" name="EatingPlace" type="checkbox" value="Cafe" tabindex="9">
+      	<label class="choice" for="Field7">Cafe</label>
+      </div>
+      <div>
+      	<input id="Field8" name="EatingPlace" type="checkbox" value="Fast food" tabindex="10">
+      	<label class="choice" for="Field8">Fast food</label>
+      </div>
+    </fieldset>
+  </div> <br>
+  
+  <div style="font-family: 'courier'">
+    <label class="desc" id="title106" for="Field106">Do you agree to provide your data for use in free access ?</label>
+    <div>
+        <select id="Field106" name="Agreement" class="field select medium" tabindex="11" style="font-family: 'courier'" > 
+            <option value="Yes, quite" selected>Yes, quite.</option>
+            <option value="Absolutely not">Absolutely not.</option>
+            <option value="Yes, only without names">Yes, only without names.</option>
+        </select>
+    </div>
+    </div> <br>
+    
+    <div> 
+         <input type="button" onclick="alert('234FF')" value="Click Me to see the ZIP CODE!"> 
+    </div> <br>
+    
+    <div style="font-family: 'courier'">
+                <label class="desc" id="zip2" for="zip">Write ZIP CODE for checking the robot:</label>
+            <div>
+                <input id="zip" name="zip" type="text" class="field text fn" value="" size="30" tabindex="1" required placeholder="Write here correct ZIP"
+                pattern="[1-9]{3}[A-Z]{2}" title="to see the Code - press the but above">
+            </div>
+        </div> <br>
+    
+    <div>
+	    <div>
+  		    <input id="saveForm" name="SEND INFO" type="submit" value="SEND INFO">
+  		    <input type="reset">
+        </div>
+	</div>
+</form>
     
 </body>
 </html>
